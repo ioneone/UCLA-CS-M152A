@@ -1,0 +1,51 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/ise/CS_152A/lab 4/project/tb_isim_beh.exe -prj /home/ise/CS_152A/lab 4/project/tb_beh.prj work.tb work.glbl 
+ISim P.20160913 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/ise/CS_152A/lab 4/project/../src/vga640x480.v" into library work
+Analyzing Verilog file "/home/ise/CS_152A/lab 4/project/../src/segdisplay.v" into library work
+Analyzing Verilog file "/home/ise/CS_152A/lab 4/project/../src/gamestate_manager.v" into library work
+Analyzing Verilog file "/home/ise/CS_152A/lab 4/project/../src/debouncer.v" into library work
+Analyzing Verilog file "/home/ise/CS_152A/lab 4/project/../src/clock_manager.v" into library work
+Analyzing Verilog file "/home/ise/CS_152A/lab 4/project/../src/clockdiv.v" into library work
+Analyzing Verilog file "/home/ise/CS_152A/lab 4/project/random.v" into library work
+Analyzing Verilog file "/home/ise/CS_152A/lab 4/project/collision_detection.v" into library work
+Analyzing Verilog file "/home/ise/CS_152A/lab 4/project/../src/NERP_demo_top.v" into library work
+Analyzing Verilog file "/home/ise/CS_152A/lab 4/project/tb.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "/home/ise/CS_152A/lab 4/project/tb.v" Line 42: Port btn is not connected to this instance
+WARNING:HDLCompiler:189 - "/home/ise/CS_152A/lab 4/project/../src/NERP_demo_top.v" Line 134: Size mismatch in connection of port <bird_width>. Formal port size is 9-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ise/CS_152A/lab 4/project/../src/NERP_demo_top.v" Line 135: Size mismatch in connection of port <bird_height>. Formal port size is 9-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ise/CS_152A/lab 4/project/../src/NERP_demo_top.v" Line 136: Size mismatch in connection of port <pipe_gap_y>. Formal port size is 9-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ise/CS_152A/lab 4/project/../src/NERP_demo_top.v" Line 139: Size mismatch in connection of port <pipe1_width>. Formal port size is 9-bit while actual signal size is 6-bit.
+WARNING:HDLCompiler:189 - "/home/ise/CS_152A/lab 4/project/../src/NERP_demo_top.v" Line 142: Size mismatch in connection of port <pipe2_width>. Formal port size is 9-bit while actual signal size is 6-bit.
+WARNING:HDLCompiler:189 - "/home/ise/CS_152A/lab 4/project/../src/NERP_demo_top.v" Line 145: Size mismatch in connection of port <pipe3_width>. Formal port size is 9-bit while actual signal size is 6-bit.
+WARNING:HDLCompiler:189 - "/home/ise/CS_152A/lab 4/project/../src/NERP_demo_top.v" Line 175: Size mismatch in connection of port <pipe_gap_y>. Formal port size is 9-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ise/CS_152A/lab 4/project/../src/NERP_demo_top.v" Line 186: Size mismatch in connection of port <bird_width>. Formal port size is 9-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ise/CS_152A/lab 4/project/../src/NERP_demo_top.v" Line 187: Size mismatch in connection of port <bird_height>. Formal port size is 9-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ise/CS_152A/lab 4/project/../src/NERP_demo_top.v" Line 188: Size mismatch in connection of port <pipe_gap_y>. Formal port size is 9-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ise/CS_152A/lab 4/project/../src/NERP_demo_top.v" Line 191: Size mismatch in connection of port <pipe1_width>. Formal port size is 10-bit while actual signal size is 6-bit.
+WARNING:HDLCompiler:189 - "/home/ise/CS_152A/lab 4/project/../src/NERP_demo_top.v" Line 194: Size mismatch in connection of port <pipe2_width>. Formal port size is 10-bit while actual signal size is 6-bit.
+WARNING:HDLCompiler:189 - "/home/ise/CS_152A/lab 4/project/../src/NERP_demo_top.v" Line 197: Size mismatch in connection of port <pipe3_width>. Formal port size is 10-bit while actual signal size is 6-bit.
+Completed static elaboration
+Fuse Memory Usage: 95556 KB
+Fuse CPU Usage: 1230 ms
+Compiling module clockdiv
+Compiling module segdisplay
+Compiling module vga640x480
+Compiling module debouncer
+Compiling module clock_manager
+Compiling module random
+Compiling module collision_detection
+Compiling module gamestate_manager
+Compiling module NERP_demo_top_default
+Compiling module tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 11 Verilog Units
+Built simulation executable /home/ise/CS_152A/lab 4/project/tb_isim_beh.exe
+Fuse Memory Usage: 117568 KB
+Fuse CPU Usage: 1580 ms
+GCC CPU Usage: 5450 ms

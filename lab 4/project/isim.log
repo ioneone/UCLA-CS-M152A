@@ -1,0 +1,30 @@
+ISim log file
+Running: /home/ise/CS_152A/lab 4/project/tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/ise/CS_152A/lab 4/project/tb_isim_beh.wdb 
+ISim P.20160913 (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING:  For instance uut/U3/, width 9 of formal port bird_width is not equal to width 32 of actual constant.
+WARNING:  For instance uut/U3/, width 9 of formal port bird_height is not equal to width 32 of actual constant.
+WARNING:  For instance uut/U3/, width 9 of formal port pipe_gap_y is not equal to width 32 of actual constant.
+WARNING: File "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 72.  For instance uut/U3/, width 9 of formal port pipe1_width is not equal to width 6 of actual variable pipe1_width. 
+WARNING: File "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 77.  For instance uut/U3/, width 9 of formal port pipe2_width is not equal to width 6 of actual variable pipe2_width. 
+WARNING: File "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 82.  For instance uut/U3/, width 9 of formal port pipe3_width is not equal to width 6 of actual variable pipe3_width. 
+WARNING:  For instance uut/U6/, width 9 of formal port pipe_gap_y is not equal to width 32 of actual constant.
+WARNING:  For instance uut/U7/, width 9 of formal port bird_width is not equal to width 32 of actual constant.
+WARNING:  For instance uut/U7/, width 9 of formal port bird_height is not equal to width 32 of actual constant.
+WARNING:  For instance uut/U7/, width 9 of formal port pipe_gap_y is not equal to width 32 of actual constant.
+WARNING: File "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 72.  For instance uut/U7/, width 10 of formal port pipe1_width is not equal to width 6 of actual variable pipe1_width. 
+WARNING: File "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 77.  For instance uut/U7/, width 10 of formal port pipe2_width is not equal to width 6 of actual variable pipe2_width. 
+WARNING: File "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 77.  For instance uut/U7/, width 10 of formal port pipe3_width is not equal to width 6 of actual variable pipe2_width. 
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run all
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 2927715 ns : File "/home/ise/CS_152A/lab 4/src/vga640x480.v" Line 251
+# run all
+Stopped at time : 28346825 ns : File "/home/ise/CS_152A/lab 4/src/debouncer.v" Line 40
+# exit 0

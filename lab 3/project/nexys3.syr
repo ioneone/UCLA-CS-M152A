@@ -1,0 +1,208 @@
+Release 14.7 - xst P.20160913 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Reading design: nexys3.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "nexys3.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "nexys3"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : nexys3
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/ise/CS_152A/lab 3/src/nexys3.v" into library work
+Parsing module <nexys3>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <nexys3>.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 125: Result of 28-bit expression is truncated to fit in 27-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 134: Result of 27-bit expression is truncated to fit in 26-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 143: Result of 26-bit expression is truncated to fit in 25-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 152: Result of 21-bit expression is truncated to fit in 20-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 184: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 192: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 196: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 206: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 215: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 219: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 236: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 239: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 242: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 245: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:295 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 307: case condition never applies
+WARNING:HDLCompiler:295 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 308: case condition never applies
+WARNING:HDLCompiler:295 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 340: case condition never applies
+WARNING:HDLCompiler:295 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 341: case condition never applies
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 346: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:295 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 382: case condition never applies
+WARNING:HDLCompiler:295 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 383: case condition never applies
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 389: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:295 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 420: case condition never applies
+WARNING:HDLCompiler:295 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 421: case condition never applies
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 425: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:295 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 460: case condition never applies
+WARNING:HDLCompiler:295 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 461: case condition never applies
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 466: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:295 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 498: case condition never applies
+WARNING:HDLCompiler:295 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 499: case condition never applies
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 505: Result of 2-bit expression is truncated to fit in 1-bit target.
+ERROR:HDLCompiler:1401 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 277: Signal seg_reg[7] in unit nexys3 is connected to following multiple drivers:
+Driver 0: output signal seg_reg[7] of instance Flip-flop (seg_reg).
+Driver 1: output signal seg_reg[7] of instance Flip-flop (_i000189).
+Driver 2: output signal seg_reg[7] of instance Flip-flop (_i000158).
+Driver 0: output signal seg_reg[6] of instance Flip-flop (seg_reg).
+Driver 1: output signal seg_reg[6] of instance Flip-flop (_i000189).
+Driver 2: output signal seg_reg[6] of instance Flip-flop (_i000158).
+Driver 0: output signal seg_reg[5] of instance Flip-flop (seg_reg).
+Driver 1: output signal seg_reg[5] of instance Flip-flop (_i000189).
+Driver 2: output signal seg_reg[5] of instance Flip-flop (_i000158).
+Driver 0: output signal seg_reg[4] of instance Flip-flop (seg_reg).
+Driver 1: output signal seg_reg[4] of instance Flip-flop (_i000189).
+Driver 2: output signal seg_reg[4] of instance Flip-flop (_i000158).
+Driver 0: output signal seg_reg[3] of instance Flip-flop (seg_reg).
+Driver 1: output signal seg_reg[3] of instance Flip-flop (_i000189).
+Driver 2: output signal seg_reg[3] of instance Flip-flop (_i000158).
+Driver 0: output signal seg_reg[2] of instance Flip-flop (seg_reg).
+Driver 1: output signal seg_reg[2] of instance Flip-flop (_i000189).
+Driver 2: output signal seg_reg[2] of instance Flip-flop (_i000158).
+Driver 0: output signal seg_reg[1] of instance Flip-flop (seg_reg).
+Driver 1: output signal seg_reg[1] of instance Flip-flop (_i000189).
+Driver 2: output signal seg_reg[1] of instance Flip-flop (_i000158).
+Driver 0: output signal seg_reg[0] of instance Flip-flop (seg_reg).
+Driver 1: output signal seg_reg[0] of instance Flip-flop (_i000189).
+Driver 2: output signal seg_reg[0] of instance Flip-flop (_i000158).
+Driver 0: output signal an_reg[3] of instance Flip-flop (an_reg).
+Driver 1: output signal an_reg[3] of instance Flip-flop (_i000187).
+Driver 2: output signal an_reg[3] of instance Flip-flop (_i000156).
+Driver 0: output signal an_reg[2] of instance Flip-flop (an_reg).
+Driver 1: output signal an_reg[2] of instance Flip-flop (_i000187).
+Driver 2: output signal an_reg[2] of instance Flip-flop (_i000156).
+Driver 0: output signal an_reg[1] of instance Flip-flop (an_reg).
+Driver 1: output signal an_reg[1] of instance Flip-flop (_i000187).
+Driver 2: output signal an_reg[1] of instance Flip-flop (_i000156).
+Driver 0: output signal an_reg[0] of instance Flip-flop (an_reg).
+Driver 1: output signal an_reg[0] of instance Flip-flop (_i000187).
+Driver 2: output signal an_reg[0] of instance Flip-flop (_i000156).
+ERROR:HDLCompiler:1401 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 270: Signal seg_counter[1] in unit nexys3 is connected to following multiple drivers:
+Driver 0: output signal seg_counter[1] of instance Flip-flop (seg_counter).
+Driver 1: output signal seg_counter[1] of instance Flip-flop (_i000129).
+Driver 0: output signal seg_counter[0] of instance Flip-flop (seg_counter).
+Driver 1: output signal seg_counter[0] of instance Flip-flop (_i000129).
+Driver 0: output signal half_seg_counter_right of instance Flip-Flop (half_seg_counter_right).
+Driver 1: output signal half_seg_counter_right of instance Flip-Flop (_i000191).
+Driver 2: output signal half_seg_counter_right of instance Flip-Flop (_i000159).
+Driver 0: output signal half_seg_counter_left of instance Flip-Flop (half_seg_counter_left).
+Driver 1: output signal half_seg_counter_left of instance Flip-Flop (_i000190).
+Driver 2: output signal half_seg_counter_left of instance Flip-Flop (_i000160).
+Module nexys3 remains a blackbox, due to errors in its contents
+WARNING:HDLCompiler:1499 - "/home/ise/CS_152A/lab 3/src/nexys3.v" Line 1: Empty module <nexys3> remains a black box.
+--> 
+
+
+Total memory usage is 407756 kilobytes
+
+Number of errors   :    2 (   0 filtered)
+Number of warnings :   32 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

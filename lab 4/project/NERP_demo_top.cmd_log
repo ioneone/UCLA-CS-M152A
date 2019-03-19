@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "/home/ise/CS_152A/lab 4/project/NERP_demo_top.xst" -ofn "/home/ise/CS_152A/lab 4/project/NERP_demo_top.syr" 
+xst -intstyle ise -ifn "/home/ise/CS_152A/lab 4/project/NERP_demo_top.xst" -ofn "/home/ise/CS_152A/lab 4/project/NERP_demo_top.syr" 
+xst -intstyle ise -ifn "/home/ise/CS_152A/lab 4/project/NERP_demo_top.xst" -ofn "/home/ise/CS_152A/lab 4/project/NERP_demo_top.syr" 
+xst -intstyle ise -ifn "/home/ise/CS_152A/lab 4/project/NERP_demo_top.xst" -ofn "/home/ise/CS_152A/lab 4/project/NERP_demo_top.syr" 
+xst -intstyle ise -ifn "/home/ise/CS_152A/lab 4/project/NERP_demo_top.xst" -ofn "/home/ise/CS_152A/lab 4/project/NERP_demo_top.syr" 

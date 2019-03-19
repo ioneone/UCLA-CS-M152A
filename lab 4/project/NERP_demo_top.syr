@@ -1,0 +1,1632 @@
+Release 14.7 - xst P.20160913 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Reading design: NERP_demo_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "NERP_demo_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "NERP_demo_top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : NERP_demo_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/ise/CS_152A/lab 4/src/vga640x480.v" into library work
+Parsing module <vga640x480>.
+Analyzing Verilog file "/home/ise/CS_152A/lab 4/src/segdisplay.v" into library work
+Parsing module <segdisplay>.
+Analyzing Verilog file "/home/ise/CS_152A/lab 4/src/random.v" into library work
+Parsing module <random>.
+Analyzing Verilog file "/home/ise/CS_152A/lab 4/src/gamestate_manager.v" into library work
+Parsing module <gamestate_manager>.
+Analyzing Verilog file "/home/ise/CS_152A/lab 4/src/debouncer.v" into library work
+Parsing module <debouncer>.
+Analyzing Verilog file "/home/ise/CS_152A/lab 4/src/collision_detection.v" into library work
+Parsing module <collision_detection>.
+Analyzing Verilog file "/home/ise/CS_152A/lab 4/src/clock_manager.v" into library work
+Parsing module <clock_manager>.
+Analyzing Verilog file "/home/ise/CS_152A/lab 4/src/clockdiv.v" into library work
+Parsing module <clockdiv>.
+Analyzing Verilog file "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" into library work
+Parsing module <NERP_demo_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 111: Port screen_width is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 147: Port screen_height is not connected to this instance
+
+Elaborating module <NERP_demo_top>.
+WARNING:HDLCompiler:872 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 81: Using initial value of bird_pos_x since it is never assigned
+
+Elaborating module <clockdiv>.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 4/src/clockdiv.v" Line 41: Result of 19-bit expression is truncated to fit in 18-bit target.
+
+Elaborating module <segdisplay>.
+
+Elaborating module <vga640x480>.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 4/src/vga640x480.v" Line 85: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 4/src/vga640x480.v" Line 94: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 4/src/vga640x480.v" Line 106: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 4/src/vga640x480.v" Line 107: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:189 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 116: Size mismatch in connection of port <bird_width>. Formal port size is 9-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 117: Size mismatch in connection of port <bird_height>. Formal port size is 9-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 118: Size mismatch in connection of port <pipe_gap_y>. Formal port size is 9-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 121: Size mismatch in connection of port <pipe1_width>. Formal port size is 9-bit while actual signal size is 6-bit.
+WARNING:HDLCompiler:189 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 124: Size mismatch in connection of port <pipe2_width>. Formal port size is 9-bit while actual signal size is 6-bit.
+
+Elaborating module <debouncer>.
+WARNING:HDLCompiler:1127 - "/home/ise/CS_152A/lab 4/src/debouncer.v" Line 42: Assignment to clk_en_d ignored, since the identifier is never used
+
+Elaborating module <clock_manager>.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 4/src/clock_manager.v" Line 48: Result of 28-bit expression is truncated to fit in 27-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 4/src/clock_manager.v" Line 53: Result of 28-bit expression is truncated to fit in 27-bit target.
+
+Elaborating module <random>.
+WARNING:HDLCompiler:1499 - "/home/ise/CS_152A/lab 4/src/random.v" Line 21: Empty module <random> remains a black box.
+WARNING:HDLCompiler:189 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 150: Size mismatch in connection of port <pipe_gap_y>. Formal port size is 9-bit while actual signal size is 32-bit.
+
+Elaborating module <collision_detection>.
+WARNING:HDLCompiler:189 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 160: Size mismatch in connection of port <bird_width>. Formal port size is 9-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 161: Size mismatch in connection of port <bird_height>. Formal port size is 9-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 162: Size mismatch in connection of port <pipe_gap_y>. Formal port size is 9-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 165: Size mismatch in connection of port <pipe1_width>. Formal port size is 10-bit while actual signal size is 6-bit.
+WARNING:HDLCompiler:189 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 168: Size mismatch in connection of port <pipe2_width>. Formal port size is 10-bit while actual signal size is 6-bit.
+
+Elaborating module <gamestate_manager>.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 198: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 199: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 201: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 211: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 218: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 232: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 237: Result of 32-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 241: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 247: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 252: Result of 32-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 256: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:634 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 53: Net <screen_width[9]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 54: Net <screen_height[8]> does not have a driver.
+WARNING:HDLCompiler:552 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" Line 147: Input port screen_height[8] is not connected on this instance
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <NERP_demo_top>.
+    Related source file is "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v".
+        bird_width = 32
+        bird_height = 32
+        bird_start_pos_x = 135
+        bird_start_pos_y = 215
+        bird_jump_power = 20
+        pipe_start_width = 50
+        pipe_gap_y = 100
+        pipe_gap_x = 300
+        pipe_start_pos_x = 350
+WARNING:Xst:2898 - Port 'screen_height', unconnected in block instance 'U6', is tied to GND.
+INFO:Xst:3210 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" line 111: Output port <screen_width> of the instance <U3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/CS_152A/lab 4/src/NERP_demo_top.v" line 111: Output port <screen_height> of the instance <U3> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <screen_width> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <screen_height> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 10-bit register for signal <pipe1_pos_x>.
+    Found 6-bit register for signal <pipe1_width>.
+    Found 6-bit register for signal <pipe2_width>.
+    Found 9-bit register for signal <bird_pos_y>.
+    Found 1-bit register for signal <pipe1_gap_pos_y<8>>.
+    Found 1-bit register for signal <pipe1_gap_pos_y<7>>.
+    Found 1-bit register for signal <pipe1_gap_pos_y<6>>.
+    Found 1-bit register for signal <pipe1_gap_pos_y<5>>.
+    Found 1-bit register for signal <pipe1_gap_pos_y<4>>.
+    Found 1-bit register for signal <pipe1_gap_pos_y<3>>.
+    Found 1-bit register for signal <pipe1_gap_pos_y<2>>.
+    Found 1-bit register for signal <pipe1_gap_pos_y<1>>.
+    Found 1-bit register for signal <pipe1_gap_pos_y<0>>.
+    Found 1-bit register for signal <pipe2_pos_x<9>>.
+    Found 1-bit register for signal <pipe2_pos_x<8>>.
+    Found 1-bit register for signal <pipe2_pos_x<7>>.
+    Found 1-bit register for signal <pipe2_pos_x<6>>.
+    Found 1-bit register for signal <pipe2_pos_x<5>>.
+    Found 1-bit register for signal <pipe2_pos_x<4>>.
+    Found 1-bit register for signal <pipe2_pos_x<3>>.
+    Found 1-bit register for signal <pipe2_pos_x<2>>.
+    Found 1-bit register for signal <pipe2_pos_x<1>>.
+    Found 1-bit register for signal <pipe2_pos_x<0>>.
+    Found 1-bit register for signal <pipe2_gap_pos_y<8>>.
+    Found 1-bit register for signal <pipe2_gap_pos_y<7>>.
+    Found 1-bit register for signal <pipe2_gap_pos_y<6>>.
+    Found 1-bit register for signal <pipe2_gap_pos_y<5>>.
+    Found 1-bit register for signal <pipe2_gap_pos_y<4>>.
+    Found 1-bit register for signal <pipe2_gap_pos_y<3>>.
+    Found 1-bit register for signal <pipe2_gap_pos_y<2>>.
+    Found 1-bit register for signal <pipe2_gap_pos_y<1>>.
+    Found 1-bit register for signal <pipe2_gap_pos_y<0>>.
+    Found 10-bit adder for signal <pipe1_pos_x[9]_GND_1_o_add_4_OUT> created at line 199.
+    Found 9-bit adder for signal <bird_pos_y[8]_GND_1_o_add_7_OUT> created at line 218.
+    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_7_OUT<8:0>> created at line 211.
+    Found 6-bit subtractor for signal <GND_1_o_GND_1_o_sub_11_OUT<5:0>> created at line 237.
+    Found 10-bit subtractor for signal <GND_1_o_GND_1_o_sub_15_OUT<9:0>> created at line 241.
+    Found 6-bit subtractor for signal <GND_1_o_GND_1_o_sub_19_OUT<5:0>> created at line 252.
+    Found 10-bit subtractor for signal <GND_1_o_GND_1_o_sub_23_OUT<9:0>> created at line 256.
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred  59 D-type flip-flop(s).
+	inferred  16 Multiplexer(s).
+Unit <NERP_demo_top> synthesized.
+
+Synthesizing Unit <clockdiv>.
+    Related source file is "/home/ise/CS_152A/lab 4/src/clockdiv.v".
+    Found 18-bit register for signal <q>.
+    Found 18-bit adder for signal <q[17]_GND_2_o_add_1_OUT> created at line 41.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+Unit <clockdiv> synthesized.
+
+Synthesizing Unit <segdisplay>.
+    Related source file is "/home/ise/CS_152A/lab 4/src/segdisplay.v".
+        N = 7'b1001000
+        E = 7'b0000110
+        R = 7'b1001100
+        P = 7'b0001100
+        left = 2'b00
+        midleft = 2'b01
+        midright = 2'b10
+        right = 2'b11
+    Found 4-bit register for signal <an>.
+    Found 7-bit register for signal <seg>.
+    Found 2-bit register for signal <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 8                                              |
+    | Clock              | segclk (rising_edge)                           |
+    | Reset              | clr (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  11 D-type flip-flop(s).
+	inferred   1 Finite State Machine(s).
+Unit <segdisplay> synthesized.
+
+Synthesizing Unit <vga640x480>.
+    Related source file is "/home/ise/CS_152A/lab 4/src/vga640x480.v".
+        hpixels = 800
+        vlines = 521
+        hpulse = 96
+        vpulse = 2
+        hbp = 144
+        hfp = 784
+        vbp = 31
+        vfp = 511
+    Found 10-bit register for signal <vc>.
+    Found 10-bit register for signal <hc>.
+    Found 10-bit adder for signal <hc[9]_GND_5_o_add_4_OUT> created at line 85.
+    Found 10-bit adder for signal <vc[9]_GND_5_o_add_6_OUT> created at line 94.
+    Found 10-bit adder for signal <n0127> created at line 119.
+    Found 10-bit adder for signal <n0168[9:0]> created at line 120.
+    Found 11-bit adder for signal <n0130> created at line 120.
+    Found 10-bit adder for signal <n0137> created at line 127.
+    Found 11-bit adder for signal <n0140> created at line 128.
+    Found 11-bit adder for signal <n0142> created at line 130.
+    Found 12-bit adder for signal <n0147> created at line 131.
+    Found 10-bit adder for signal <n0148> created at line 134.
+    Found 11-bit adder for signal <n0151> created at line 135.
+    Found 11-bit adder for signal <n0153> created at line 137.
+    Found 12-bit adder for signal <n0158> created at line 138.
+    Found 10-bit comparator greater for signal <hc[9]_PWR_4_o_LessThan_4_o> created at line 84
+    Found 10-bit comparator greater for signal <vc[9]_PWR_4_o_LessThan_6_o> created at line 93
+    Found 10-bit comparator greater for signal <hc[9]_GND_5_o_LessThan_13_o> created at line 106
+    Found 10-bit comparator greater for signal <vc[9]_GND_5_o_LessThan_15_o> created at line 107
+    Found 10-bit comparator lessequal for signal <n0016> created at line 119
+    Found 11-bit comparator lessequal for signal <n0020> created at line 120
+    Found 11-bit comparator lessequal for signal <n0024> created at line 121
+    Found 12-bit comparator lessequal for signal <n0029> created at line 122
+    Found 10-bit comparator lessequal for signal <n0033> created at line 124
+    Found 10-bit comparator greater for signal <hc[9]_PWR_4_o_LessThan_30_o> created at line 124
+    Found 10-bit comparator lessequal for signal <n0038> created at line 127
+    Found 10-bit comparator lessequal for signal <n0041> created at line 127
+    Found 11-bit comparator lessequal for signal <n0045> created at line 128
+    Found 10-bit comparator greater for signal <vc[9]_GND_5_o_LessThan_37_o> created at line 128
+    Found 11-bit comparator lessequal for signal <n0051> created at line 130
+    Found 12-bit comparator lessequal for signal <n0054> created at line 131
+    Found 10-bit comparator lessequal for signal <n0058> created at line 134
+    Found 11-bit comparator lessequal for signal <n0062> created at line 135
+    Found 11-bit comparator lessequal for signal <n0067> created at line 137
+    Found 12-bit comparator lessequal for signal <n0070> created at line 138
+    Summary:
+	inferred  13 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred  20 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <vga640x480> synthesized.
+
+Synthesizing Unit <debouncer>.
+    Related source file is "/home/ise/CS_152A/lab 4/src/debouncer.v".
+    Found 1-bit register for signal <clk_en>.
+    Found 3-bit register for signal <step_d>.
+    Found 17-bit register for signal <clk_dv>.
+    Found 18-bit adder for signal <n0018> created at line 40.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+Unit <debouncer> synthesized.
+
+Synthesizing Unit <clock_manager>.
+    Related source file is "/home/ise/CS_152A/lab 4/src/clock_manager.v".
+        clk_bird_counter_max = 500000
+        clk_pipe_counter_max = 500000
+    Found 27-bit register for signal <clk_pipe_counter>.
+    Found 27-bit register for signal <clk_bird_counter>.
+    Found 27-bit adder for signal <clk_bird_counter[26]_GND_7_o_add_2_OUT> created at line 48.
+    Found 27-bit adder for signal <clk_pipe_counter[26]_GND_7_o_add_4_OUT> created at line 53.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  54 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <clock_manager> synthesized.
+
+Synthesizing Unit <random>.
+    Related source file is "/home/ise/CS_152A/lab 4/src/random.v".
+WARNING:Xst:647 - Input <screen_height> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pipe_gap_y> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <random1> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <random2> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <random> synthesized.
+
+Synthesizing Unit <collision_detection>.
+    Related source file is "/home/ise/CS_152A/lab 4/src/collision_detection.v".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 10-bit adder for signal <pipe1_max_x> created at line 44.
+    Found 10-bit adder for signal <pipe2_max_x> created at line 45.
+    Found 9-bit adder for signal <pipe1_bot_y> created at line 50.
+    Found 9-bit adder for signal <pipe2_bot_y> created at line 51.
+    Found 9-bit adder for signal <bird_min_y> created at line 52.
+    Found 9-bit subtractor for signal <screen_height[8]_bird_height[8]_sub_1_OUT> created at line 40.
+    Found 9-bit comparator lessequal for signal <n0001> created at line 40
+    Found 10-bit comparator lessequal for signal <n0006> created at line 46
+    Found 10-bit comparator lessequal for signal <n0008> created at line 46
+    Found 10-bit comparator lessequal for signal <n0011> created at line 47
+    Found 10-bit comparator lessequal for signal <n0013> created at line 47
+    Found 9-bit comparator lessequal for signal <n0019> created at line 54
+    Found 9-bit comparator lessequal for signal <n0021> created at line 55
+    Found 9-bit comparator lessequal for signal <n0023> created at line 57
+    Found 9-bit comparator lessequal for signal <n0025> created at line 58
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+Unit <collision_detection> synthesized.
+
+Synthesizing Unit <gamestate_manager>.
+    Related source file is "/home/ise/CS_152A/lab 4/src/gamestate_manager.v".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <gamestate_manager> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 29
+ 10-bit adder                                          : 9
+ 10-bit subtractor                                     : 2
+ 11-bit adder                                          : 5
+ 12-bit adder                                          : 2
+ 18-bit adder                                          : 2
+ 27-bit adder                                          : 2
+ 6-bit subtractor                                      : 2
+ 9-bit adder                                           : 3
+ 9-bit addsub                                          : 1
+ 9-bit subtractor                                      : 1
+# Registers                                            : 41
+ 1-bit register                                        : 28
+ 10-bit register                                       : 3
+ 18-bit register                                       : 2
+ 27-bit register                                       : 2
+ 3-bit register                                        : 1
+ 4-bit register                                        : 1
+ 6-bit register                                        : 2
+ 7-bit register                                        : 1
+ 9-bit register                                        : 1
+# Comparators                                          : 29
+ 10-bit comparator greater                             : 6
+ 10-bit comparator lessequal                           : 9
+ 11-bit comparator lessequal                           : 6
+ 12-bit comparator lessequal                           : 3
+ 9-bit comparator lessequal                            : 5
+# Multiplexers                                         : 23
+ 10-bit 2-to-1 multiplexer                             : 7
+ 2-bit 2-to-1 multiplexer                              : 2
+ 27-bit 2-to-1 multiplexer                             : 2
+ 3-bit 2-to-1 multiplexer                              : 1
+ 6-bit 2-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 9
+# FSMs                                                 : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <seg_0> in Unit <U2> is equivalent to the following 2 FFs/Latches, which will be removed : <seg_4> <seg_5> 
+
+Synthesizing (advanced) Unit <clock_manager>.
+The following registers are absorbed into counter <clk_pipe_counter>: 1 register on signal <clk_pipe_counter>.
+The following registers are absorbed into counter <clk_bird_counter>: 1 register on signal <clk_bird_counter>.
+Unit <clock_manager> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clockdiv>.
+The following registers are absorbed into counter <q>: 1 register on signal <q>.
+Unit <clockdiv> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vga640x480>.
+The following registers are absorbed into counter <hc>: 1 register on signal <hc>.
+The following registers are absorbed into counter <vc>: 1 register on signal <vc>.
+Unit <vga640x480> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 23
+ 10-bit adder                                          : 6
+ 10-bit subtractor                                     : 2
+ 11-bit adder                                          : 5
+ 12-bit adder                                          : 2
+ 18-bit adder                                          : 1
+ 6-bit subtractor                                      : 2
+ 9-bit adder                                           : 3
+ 9-bit addsub                                          : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 5
+ 10-bit up counter                                     : 2
+ 18-bit up counter                                     : 1
+ 27-bit up counter                                     : 2
+# Registers                                            : 91
+ Flip-Flops                                            : 91
+# Comparators                                          : 29
+ 10-bit comparator greater                             : 6
+ 10-bit comparator lessequal                           : 9
+ 11-bit comparator lessequal                           : 6
+ 12-bit comparator lessequal                           : 3
+ 9-bit comparator lessequal                            : 5
+# Multiplexers                                         : 19
+ 10-bit 2-to-1 multiplexer                             : 5
+ 2-bit 2-to-1 multiplexer                              : 2
+ 3-bit 2-to-1 multiplexer                              : 1
+ 6-bit 2-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 9
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <seg_0> in Unit <segdisplay> is equivalent to the following 2 FFs/Latches, which will be removed : <seg_4> <seg_5> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <U2/FSM_0> on signal <state[1:4]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 0001
+ 01    | 0010
+ 10    | 0100
+ 11    | 1000
+-------------------
+INFO:Xst:2261 - The FF/Latch <an_3> in Unit <segdisplay> is equivalent to the following FF/Latch, which will be removed : <seg_2> 
+INFO:Xst:2261 - The FF/Latch <an_2> in Unit <segdisplay> is equivalent to the following FF/Latch, which will be removed : <seg_3> 
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    pipe2_pos_x_9 in unit <NERP_demo_top>
+    pipe2_pos_x_0 in unit <NERP_demo_top>
+    pipe2_pos_x_1 in unit <NERP_demo_top>
+    pipe2_pos_x_3 in unit <NERP_demo_top>
+    pipe2_pos_x_4 in unit <NERP_demo_top>
+    pipe2_pos_x_2 in unit <NERP_demo_top>
+    pipe2_pos_x_5 in unit <NERP_demo_top>
+    pipe2_pos_x_6 in unit <NERP_demo_top>
+    pipe2_pos_x_7 in unit <NERP_demo_top>
+    pipe2_pos_x_8 in unit <NERP_demo_top>
+
+
+  List of register instances with asynchronous set or reset and opposite initialization value:
+    pipe1_gap_pos_y_8 in unit <NERP_demo_top>
+    pipe2_gap_pos_y_2 in unit <NERP_demo_top>
+    pipe2_gap_pos_y_1 in unit <NERP_demo_top>
+    pipe2_gap_pos_y_4 in unit <NERP_demo_top>
+    pipe2_gap_pos_y_7 in unit <NERP_demo_top>
+    pipe1_gap_pos_y_2 in unit <NERP_demo_top>
+    pipe1_gap_pos_y_3 in unit <NERP_demo_top>
+    pipe1_gap_pos_y_5 in unit <NERP_demo_top>
+
+
+Optimizing unit <NERP_demo_top> ...
+WARNING:Xst:1293 - FF/Latch <pipe1_gap_pos_y_6> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pipe1_gap_pos_y_7> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pipe1_gap_pos_y_4> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pipe1_gap_pos_y_1> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pipe1_gap_pos_y_0> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pipe2_gap_pos_y_6> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pipe2_gap_pos_y_5> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pipe2_gap_pos_y_3> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pipe2_gap_pos_y_0> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pipe2_gap_pos_y_8> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <debouncer> ...
+
+Optimizing unit <segdisplay> ...
+
+Optimizing unit <vga640x480> ...
+WARNING:Xst:1293 - FF/Latch <pipe1_pos_x_9> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <U5/clk_bird_counter_19> (without init value) has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U5/clk_bird_counter_20> (without init value) has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U5/clk_bird_counter_21> (without init value) has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U5/clk_bird_counter_22> (without init value) has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U5/clk_bird_counter_23> (without init value) has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U5/clk_bird_counter_24> (without init value) has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U5/clk_bird_counter_25> (without init value) has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U5/clk_bird_counter_26> (without init value) has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U5/clk_pipe_counter_19> (without init value) has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U5/clk_pipe_counter_20> (without init value) has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U5/clk_pipe_counter_21> (without init value) has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U5/clk_pipe_counter_22> (without init value) has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U5/clk_pipe_counter_23> (without init value) has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U5/clk_pipe_counter_24> (without init value) has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U5/clk_pipe_counter_25> (without init value) has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U5/clk_pipe_counter_26> (without init value) has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <U5/clk_pipe_counter_0> in Unit <NERP_demo_top> is equivalent to the following FF/Latch, which will be removed : <U5/clk_bird_counter_0> 
+INFO:Xst:2261 - The FF/Latch <U5/clk_pipe_counter_1> in Unit <NERP_demo_top> is equivalent to the following FF/Latch, which will be removed : <U5/clk_bird_counter_1> 
+INFO:Xst:2261 - The FF/Latch <U5/clk_pipe_counter_2> in Unit <NERP_demo_top> is equivalent to the following FF/Latch, which will be removed : <U5/clk_bird_counter_2> 
+INFO:Xst:2261 - The FF/Latch <U5/clk_pipe_counter_3> in Unit <NERP_demo_top> is equivalent to the following FF/Latch, which will be removed : <U5/clk_bird_counter_3> 
+INFO:Xst:2261 - The FF/Latch <U5/clk_pipe_counter_4> in Unit <NERP_demo_top> is equivalent to the following FF/Latch, which will be removed : <U5/clk_bird_counter_4> 
+INFO:Xst:2261 - The FF/Latch <U5/clk_pipe_counter_5> in Unit <NERP_demo_top> is equivalent to the following FF/Latch, which will be removed : <U5/clk_bird_counter_5> 
+INFO:Xst:2261 - The FF/Latch <U5/clk_pipe_counter_6> in Unit <NERP_demo_top> is equivalent to the following FF/Latch, which will be removed : <U5/clk_bird_counter_6> 
+INFO:Xst:2261 - The FF/Latch <U5/clk_pipe_counter_7> in Unit <NERP_demo_top> is equivalent to the following FF/Latch, which will be removed : <U5/clk_bird_counter_7> 
+INFO:Xst:2261 - The FF/Latch <U5/clk_pipe_counter_8> in Unit <NERP_demo_top> is equivalent to the following FF/Latch, which will be removed : <U5/clk_bird_counter_8> 
+INFO:Xst:2261 - The FF/Latch <U5/clk_pipe_counter_9> in Unit <NERP_demo_top> is equivalent to the following FF/Latch, which will be removed : <U5/clk_bird_counter_9> 
+INFO:Xst:2261 - The FF/Latch <pipe1_gap_pos_y_5> in Unit <NERP_demo_top> is equivalent to the following 3 FFs/Latches, which will be removed : <pipe1_gap_pos_y_3> <pipe1_gap_pos_y_2> <pipe1_gap_pos_y_8> 
+INFO:Xst:2261 - The FF/Latch <U5/clk_pipe_counter_10> in Unit <NERP_demo_top> is equivalent to the following FF/Latch, which will be removed : <U5/clk_bird_counter_10> 
+INFO:Xst:2261 - The FF/Latch <U5/clk_pipe_counter_11> in Unit <NERP_demo_top> is equivalent to the following FF/Latch, which will be removed : <U5/clk_bird_counter_11> 
+INFO:Xst:2261 - The FF/Latch <U5/clk_pipe_counter_12> in Unit <NERP_demo_top> is equivalent to the following FF/Latch, which will be removed : <U5/clk_bird_counter_12> 
+INFO:Xst:2261 - The FF/Latch <U5/clk_pipe_counter_13> in Unit <NERP_demo_top> is equivalent to the following FF/Latch, which will be removed : <U5/clk_bird_counter_13> 
+INFO:Xst:2261 - The FF/Latch <U5/clk_pipe_counter_14> in Unit <NERP_demo_top> is equivalent to the following FF/Latch, which will be removed : <U5/clk_bird_counter_14> 
+INFO:Xst:2261 - The FF/Latch <U5/clk_pipe_counter_15> in Unit <NERP_demo_top> is equivalent to the following FF/Latch, which will be removed : <U5/clk_bird_counter_15> 
+INFO:Xst:2261 - The FF/Latch <U5/clk_pipe_counter_16> in Unit <NERP_demo_top> is equivalent to the following FF/Latch, which will be removed : <U5/clk_bird_counter_16> 
+INFO:Xst:2261 - The FF/Latch <U5/clk_pipe_counter_17> in Unit <NERP_demo_top> is equivalent to the following FF/Latch, which will be removed : <U5/clk_bird_counter_17> 
+INFO:Xst:2261 - The FF/Latch <U5/clk_pipe_counter_18> in Unit <NERP_demo_top> is equivalent to the following FF/Latch, which will be removed : <U5/clk_bird_counter_18> 
+INFO:Xst:2261 - The FF/Latch <pipe2_gap_pos_y_1> in Unit <NERP_demo_top> is equivalent to the following 3 FFs/Latches, which will be removed : <pipe2_gap_pos_y_7> <pipe2_gap_pos_y_4> <pipe2_gap_pos_y_2> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block NERP_demo_top, actual ratio is 5.
+WARNING:Xst:1426 - The value init of the FF/Latch pipe1_gap_pos_y_5_LD hinder the constant cleaning in the block NERP_demo_top.
+   You should achieve better results by setting this init to 0.
+FlipFlop U2/seg_0 has been replicated 2 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 145
+ Flip-Flops                                            : 145
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : NERP_demo_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 819
+#      GND                         : 1
+#      INV                         : 13
+#      LUT1                        : 58
+#      LUT2                        : 40
+#      LUT3                        : 51
+#      LUT4                        : 132
+#      LUT5                        : 76
+#      LUT6                        : 156
+#      MUXCY                       : 174
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 116
+# FlipFlops/Latches                : 156
+#      FD                          : 2
+#      FDC                         : 65
+#      FDCE                        : 19
+#      FDP                         : 26
+#      FDPE                        : 12
+#      FDR                         : 18
+#      FDRE                        : 3
+#      LD                          : 1
+#      LDC                         : 6
+#      LDP                         : 4
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 25
+#      IBUF                        : 3
+#      OBUF                        : 22
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             153  out of  18224     0%  
+ Number of Slice LUTs:                  526  out of   9112     5%  
+    Number used as Logic:               526  out of   9112     5%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    554
+   Number with an unused Flip Flop:     401  out of    554    72%  
+   Number with an unused LUT:            28  out of    554     5%  
+   Number of fully used LUT-FF pairs:   125  out of    554    22%  
+   Number of unique control sets:        39
+
+IO Utilization: 
+ Number of IOs:                          26
+ Number of bonded IOBs:                  26  out of    232    11%  
+    IOB Flip Flops/Latches:               3
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------+----------------------------+-------+
+Clock Signal                                               | Clock buffer(FF name)      | Load  |
+-----------------------------------------------------------+----------------------------+-------+
+clk                                                        | BUFGP                      | 112   |
+U1/q_17                                                    | NONE(U2/state_FSM_FFd4)    | 13    |
+U1/q_1                                                     | BUFG                       | 20    |
+clr                                                        | IBUF+BUFG                  | 1     |
+clr_pipe1_pos_x[9]_AND_40_o(clr_pipe1_pos_x[9]_AND_40_o1:O)| NONE(*)(pipe2_pos_x_8_LDC) | 1     |
+clr_pipe1_pos_x[9]_AND_43_o(clr_pipe1_pos_x[9]_AND_43_o1:O)| NONE(*)(pipe2_pos_x_7_LDC1)| 1     |
+clr_pipe1_pos_x[9]_AND_44_o(clr_pipe1_pos_x[9]_AND_44_o1:O)| NONE(*)(pipe2_pos_x_6_LDC) | 1     |
+clr_pipe1_pos_x[9]_AND_46_o(clr_pipe1_pos_x[9]_AND_46_o1:O)| NONE(*)(pipe2_pos_x_5_LDC) | 1     |
+clr_pipe1_pos_x[9]_AND_52_o(clr_pipe1_pos_x[9]_AND_52_o1:O)| NONE(*)(pipe2_pos_x_2_LDC) | 1     |
+clr_pipe1_pos_x[9]_AND_48_o(clr_pipe1_pos_x[9]_AND_48_o1:O)| NONE(*)(pipe2_pos_x_4_LDC) | 1     |
+clr_pipe1_pos_x[9]_AND_51_o(clr_pipe1_pos_x[9]_AND_51_o1:O)| NONE(*)(pipe2_pos_x_3_LDC1)| 1     |
+clr_pipe1_pos_x[9]_AND_55_o(clr_pipe1_pos_x[9]_AND_55_o1:O)| NONE(*)(pipe2_pos_x_1_LDC1)| 1     |
+clr_pipe1_pos_x[9]_AND_56_o(clr_pipe1_pos_x[9]_AND_56_o1:O)| NONE(*)(pipe2_pos_x_0_LDC) | 1     |
+clr_pipe1_pos_x[9]_AND_39_o(clr_pipe1_pos_x[9]_AND_39_o1:O)| NONE(*)(pipe2_pos_x_9_LDC1)| 1     |
+-----------------------------------------------------------+----------------------------+-------+
+(*) These 10 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 6.491ns (Maximum Frequency: 154.057MHz)
+   Minimum input arrival time before clock: 6.453ns
+   Maximum output required time after clock: 11.453ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.491ns (frequency: 154.057MHz)
+  Total number of paths / destination ports: 35523 / 155
+-------------------------------------------------------------------------
+Delay:               6.491ns (Levels of Logic = 8)
+  Source:            pipe2_pos_x_0_C_0 (FF)
+  Destination:       pipe1_width_1 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: pipe2_pos_x_0_C_0 to pipe1_width_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.447   0.819  pipe2_pos_x_0_C_0 (pipe2_pos_x_0_C_0)
+     LUT3:I1->O            8   0.203   0.802  pipe2_pos_x_01 (pipe2_pos_x_0)
+     MUXCY:DI->O           1   0.145   0.000  U7/Madd_pipe2_max_x_cy<0> (U7/Madd_pipe2_max_x_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  U7/Madd_pipe2_max_x_cy<1> (U7/Madd_pipe2_max_x_cy<1>)
+     XORCY:CI->O           1   0.180   0.808  U7/Madd_pipe2_max_x_xor<2> (U7/pipe2_max_x<2>)
+     LUT5:I2->O            4   0.205   0.684  U8/isDone6 (U8/isDone5)
+     LUT6:I5->O           11   0.205   0.883  U8/isDone7_2 (U8/isDone72)
+     LUT6:I5->O            1   0.205   0.580  Mmux_pipe2_pos_x[9]_pipe2_pos_x[9]_mux_38_OUT101_SW1 (N163)
+     LUT6:I5->O            2   0.205   0.000  Mmux_pipe2_pos_x[9]_pipe2_pos_x[9]_mux_38_OUT101 (pipe2_pos_x[9]_pipe2_pos_x[9]_mux_38_OUT<9>)
+     FDC:D                     0.102          pipe2_pos_x_9_C_9
+    ----------------------------------------
+    Total                      6.491ns (1.916ns logic, 4.575ns route)
+                                       (29.5% logic, 70.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U1/q_17'
+  Clock period: 1.984ns (frequency: 504.007MHz)
+  Total number of paths / destination ports: 11 / 10
+-------------------------------------------------------------------------
+Delay:               1.984ns (Levels of Logic = 1)
+  Source:            U2/state_FSM_FFd4 (FF)
+  Destination:       U2/an_3 (FF)
+  Source Clock:      U1/q_17 rising
+  Destination Clock: U1/q_17 rising
+
+  Data Path: U2/state_FSM_FFd4 to U2/an_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              3   0.447   0.650  U2/state_FSM_FFd4 (U2/state_FSM_FFd3-In)
+     INV:I->O              1   0.206   0.579  U2/_n0021<10>1_INV_0 (U2/_n0021<10>)
+     FDP:D                     0.102          U2/an_3
+    ----------------------------------------
+    Total                      1.984ns (0.755ns logic, 1.229ns route)
+                                       (38.1% logic, 61.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U1/q_1'
+  Clock period: 4.780ns (frequency: 209.207MHz)
+  Total number of paths / destination ports: 1131 / 30
+-------------------------------------------------------------------------
+Delay:               4.780ns (Levels of Logic = 13)
+  Source:            U3/hc_3 (FF)
+  Destination:       U3/hc_9 (FF)
+  Source Clock:      U1/q_1 rising
+  Destination Clock: U1/q_1 rising
+
+  Data Path: U3/hc_3 to U3/hc_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             12   0.447   1.253  U3/hc_3 (U3/hc_3)
+     LUT5:I0->O            3   0.203   0.651  U3/hc[9]_PWR_4_o_LessThan_4_o_inv1 (U3/hc[9]_PWR_4_o_LessThan_4_o_inv1)
+     LUT6:I5->O           15   0.205   1.210  U3/hc[9]_PWR_4_o_LessThan_4_o_inv2 (U3/hc[9]_PWR_4_o_LessThan_4_o_inv)
+     LUT3:I0->O            1   0.205   0.000  U3/Mcount_hc_lut<0> (U3/Mcount_hc_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  U3/Mcount_hc_cy<0> (U3/Mcount_hc_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcount_hc_cy<1> (U3/Mcount_hc_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcount_hc_cy<2> (U3/Mcount_hc_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcount_hc_cy<3> (U3/Mcount_hc_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcount_hc_cy<4> (U3/Mcount_hc_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcount_hc_cy<5> (U3/Mcount_hc_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcount_hc_cy<6> (U3/Mcount_hc_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcount_hc_cy<7> (U3/Mcount_hc_cy<7>)
+     MUXCY:CI->O           0   0.019   0.000  U3/Mcount_hc_cy<8> (U3/Mcount_hc_cy<8>)
+     XORCY:CI->O           1   0.180   0.000  U3/Mcount_hc_xor<9> (U3/Mcount_hc9)
+     FDC:D                     0.102          U3/hc_9
+    ----------------------------------------
+    Total                      4.780ns (1.666ns logic, 3.114ns route)
+                                       (34.9% logic, 65.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 188 / 168
+-------------------------------------------------------------------------
+Offset:              6.453ns (Levels of Logic = 4)
+  Source:            clr (PAD)
+  Destination:       pipe2_pos_x_8_C_8 (FF)
+  Destination Clock: clk rising
+
+  Data Path: clr to pipe2_pos_x_8_C_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           144   1.222   2.337  clr_IBUF (clr_IBUF)
+     LUT5:I0->O            3   0.203   0.995  U8/isDone1 (U8/isDone)
+     LUT5:I0->O           14   0.203   1.186  U8/isDone10_SW0 (N35)
+     LUT6:I3->O            2   0.205   0.000  Mmux_pipe2_pos_x[9]_pipe2_pos_x[9]_mux_38_OUT91 (pipe2_pos_x[9]_pipe2_pos_x[9]_mux_38_OUT<8>)
+     FDC:D                     0.102          pipe2_pos_x_8_C_8
+    ----------------------------------------
+    Total                      6.453ns (1.935ns logic, 4.518ns route)
+                                       (30.0% logic, 70.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U1/q_17'
+  Total number of paths / destination ports: 13 / 13
+-------------------------------------------------------------------------
+Offset:              3.644ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       U2/state_FSM_FFd4 (FF)
+  Destination Clock: U1/q_17 rising
+
+  Data Path: clr to U2/state_FSM_FFd4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           144   1.222   1.992  clr_IBUF (clr_IBUF)
+     FDP:PRE                   0.430          U2/an_0
+    ----------------------------------------
+    Total                      3.644ns (1.652ns logic, 1.992ns route)
+                                       (45.3% logic, 54.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U1/q_1'
+  Total number of paths / destination ports: 20 / 20
+-------------------------------------------------------------------------
+Offset:              3.644ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       U3/vc_9 (FF)
+  Destination Clock: U1/q_1 rising
+
+  Data Path: clr to U3/vc_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           144   1.222   1.992  clr_IBUF (clr_IBUF)
+     FDC:CLR                   0.430          U3/hc_0
+    ----------------------------------------
+    Total                      3.644ns (1.652ns logic, 1.992ns route)
+                                       (45.3% logic, 54.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clr_pipe1_pos_x[9]_AND_40_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.711ns (Levels of Logic = 2)
+  Source:            clr (PAD)
+  Destination:       pipe2_pos_x_8_LDC (LATCH)
+  Destination Clock: clr_pipe1_pos_x[9]_AND_40_o falling
+
+  Data Path: clr to pipe2_pos_x_8_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           144   1.222   2.240  clr_IBUF (clr_IBUF)
+     LUT4:I0->O            2   0.203   0.616  clr_pipe1_pos_x[9]_AND_41_o1 (clr_pipe1_pos_x[9]_AND_41_o)
+     LDC:CLR                   0.430          pipe2_pos_x_8_LDC
+    ----------------------------------------
+    Total                      4.711ns (1.855ns logic, 2.856ns route)
+                                       (39.4% logic, 60.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clr_pipe1_pos_x[9]_AND_43_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.694ns (Levels of Logic = 2)
+  Source:            clr (PAD)
+  Destination:       pipe2_pos_x_7_LDC1 (LATCH)
+  Destination Clock: clr_pipe1_pos_x[9]_AND_43_o falling
+
+  Data Path: clr to pipe2_pos_x_7_LDC1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           144   1.222   2.221  clr_IBUF (clr_IBUF)
+     LUT3:I0->O            2   0.205   0.616  clr_pipe1_pos_x[9]_AND_42_o1 (pipe2_pos_x_7_LDC)
+     LDP:PRE                   0.430          pipe2_pos_x_7_LDC1
+    ----------------------------------------
+    Total                      4.694ns (1.857ns logic, 2.837ns route)
+                                       (39.6% logic, 60.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clr_pipe1_pos_x[9]_AND_44_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.828ns (Levels of Logic = 2)
+  Source:            clr (PAD)
+  Destination:       pipe2_pos_x_6_LDC (LATCH)
+  Destination Clock: clr_pipe1_pos_x[9]_AND_44_o falling
+
+  Data Path: clr to pipe2_pos_x_6_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           144   1.222   2.357  clr_IBUF (clr_IBUF)
+     LUT6:I0->O            2   0.203   0.616  clr_pipe1_pos_x[9]_AND_45_o1 (clr_pipe1_pos_x[9]_AND_45_o)
+     LDC:CLR                   0.430          pipe2_pos_x_6_LDC
+    ----------------------------------------
+    Total                      4.828ns (1.855ns logic, 2.973ns route)
+                                       (38.4% logic, 61.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clr_pipe1_pos_x[9]_AND_46_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.808ns (Levels of Logic = 2)
+  Source:            clr (PAD)
+  Destination:       pipe2_pos_x_5_LDC (LATCH)
+  Destination Clock: clr_pipe1_pos_x[9]_AND_46_o falling
+
+  Data Path: clr to pipe2_pos_x_5_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           144   1.222   2.337  clr_IBUF (clr_IBUF)
+     LUT5:I0->O            2   0.203   0.616  clr_pipe1_pos_x[9]_AND_47_o1 (clr_pipe1_pos_x[9]_AND_47_o)
+     LDC:CLR                   0.430          pipe2_pos_x_5_LDC
+    ----------------------------------------
+    Total                      4.808ns (1.855ns logic, 2.953ns route)
+                                       (38.6% logic, 61.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clr_pipe1_pos_x[9]_AND_52_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.568ns (Levels of Logic = 2)
+  Source:            clr (PAD)
+  Destination:       pipe2_pos_x_2_LDC (LATCH)
+  Destination Clock: clr_pipe1_pos_x[9]_AND_52_o falling
+
+  Data Path: clr to pipe2_pos_x_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           144   1.222   2.097  clr_IBUF (clr_IBUF)
+     LUT2:I0->O            2   0.203   0.616  clr_pipe1_pos_x[9]_AND_53_o1 (clr_pipe1_pos_x[9]_AND_53_o)
+     LDC:CLR                   0.430          pipe2_pos_x_2_LDC
+    ----------------------------------------
+    Total                      4.568ns (1.855ns logic, 2.713ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clr_pipe1_pos_x[9]_AND_48_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.711ns (Levels of Logic = 2)
+  Source:            clr (PAD)
+  Destination:       pipe2_pos_x_4_LDC (LATCH)
+  Destination Clock: clr_pipe1_pos_x[9]_AND_48_o falling
+
+  Data Path: clr to pipe2_pos_x_4_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           144   1.222   2.240  clr_IBUF (clr_IBUF)
+     LUT4:I0->O            2   0.203   0.616  clr_pipe1_pos_x[9]_AND_49_o1 (clr_pipe1_pos_x[9]_AND_49_o)
+     LDC:CLR                   0.430          pipe2_pos_x_4_LDC
+    ----------------------------------------
+    Total                      4.711ns (1.855ns logic, 2.856ns route)
+                                       (39.4% logic, 60.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clr_pipe1_pos_x[9]_AND_51_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.694ns (Levels of Logic = 2)
+  Source:            clr (PAD)
+  Destination:       pipe2_pos_x_3_LDC1 (LATCH)
+  Destination Clock: clr_pipe1_pos_x[9]_AND_51_o falling
+
+  Data Path: clr to pipe2_pos_x_3_LDC1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           144   1.222   2.221  clr_IBUF (clr_IBUF)
+     LUT3:I0->O            2   0.205   0.616  clr_pipe1_pos_x[9]_AND_50_o1 (pipe2_pos_x_3_LDC)
+     LDP:PRE                   0.430          pipe2_pos_x_3_LDC1
+    ----------------------------------------
+    Total                      4.694ns (1.857ns logic, 2.837ns route)
+                                       (39.6% logic, 60.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clr_pipe1_pos_x[9]_AND_55_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.568ns (Levels of Logic = 2)
+  Source:            clr (PAD)
+  Destination:       pipe2_pos_x_1_LDC1 (LATCH)
+  Destination Clock: clr_pipe1_pos_x[9]_AND_55_o falling
+
+  Data Path: clr to pipe2_pos_x_1_LDC1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           144   1.222   2.097  clr_IBUF (clr_IBUF)
+     LUT2:I0->O            2   0.203   0.616  clr_pipe1_pos_x[9]_AND_54_o1 (pipe2_pos_x_1_LDC)
+     LDP:PRE                   0.430          pipe2_pos_x_1_LDC1
+    ----------------------------------------
+    Total                      4.568ns (1.855ns logic, 2.713ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clr_pipe1_pos_x[9]_AND_56_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.568ns (Levels of Logic = 2)
+  Source:            clr (PAD)
+  Destination:       pipe2_pos_x_0_LDC (LATCH)
+  Destination Clock: clr_pipe1_pos_x[9]_AND_56_o falling
+
+  Data Path: clr to pipe2_pos_x_0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           144   1.222   2.097  clr_IBUF (clr_IBUF)
+     LUT2:I0->O            2   0.203   0.616  clr_pipe1_pos_x[9]_AND_57_o1 (clr_pipe1_pos_x[9]_AND_57_o)
+     LDC:CLR                   0.430          pipe2_pos_x_0_LDC
+    ----------------------------------------
+    Total                      4.568ns (1.855ns logic, 2.713ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clr_pipe1_pos_x[9]_AND_39_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.711ns (Levels of Logic = 2)
+  Source:            clr (PAD)
+  Destination:       pipe2_pos_x_9_LDC1 (LATCH)
+  Destination Clock: clr_pipe1_pos_x[9]_AND_39_o falling
+
+  Data Path: clr to pipe2_pos_x_9_LDC1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           144   1.222   2.240  clr_IBUF (clr_IBUF)
+     LUT4:I0->O            2   0.203   0.616  clr_pipe1_pos_x[9]_AND_38_o1 (pipe2_pos_x_9_LDC)
+     LDP:PRE                   0.430          pipe2_pos_x_9_LDC1
+    ----------------------------------------
+    Total                      4.711ns (1.855ns logic, 2.856ns route)
+                                       (39.4% logic, 60.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U1/q_17'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            U2/an_2 (FF)
+  Destination:       seg<3> (PAD)
+  Source Clock:      U1/q_17 rising
+
+  Data Path: U2/an_2 to seg<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              2   0.447   0.616  U2/an_2 (U2/an_2)
+     OBUF:I->O                 2.571          seg_3_OBUF (seg<3>)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 8888 / 8
+-------------------------------------------------------------------------
+Offset:              11.276ns (Levels of Logic = 9)
+  Source:            pipe2_pos_x_4_C_4 (FF)
+  Destination:       blue<1> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: pipe2_pos_x_4_C_4 to blue<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   0.788  pipe2_pos_x_4_C_4 (pipe2_pos_x_4_C_4)
+     LUT3:I1->O           18   0.203   1.154  pipe2_pos_x_41 (pipe2_pos_x_4)
+     LUT5:I3->O            2   0.203   0.864  U3/Madd_n0153_xor<6>11 (U3/n0153<6>)
+     LUT4:I0->O            1   0.203   0.000  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_lut<3> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_lut<3>)
+     MUXCY:S->O            1   0.366   0.580  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<3> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<3>)
+     LUT6:I5->O            1   0.205   0.924  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<4> (U3/BUS_0018_GND_5_o_LessThan_51_o)
+     LUT5:I0->O            2   0.203   0.617  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o2 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o2)
+     LUT3:I2->O            1   0.205   0.924  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o3 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o)
+     LUT5:I0->O            2   0.203   0.616  U3/blue<1> (blue_0_OBUF)
+     OBUF:I->O                 2.571          blue_1_OBUF (blue<1>)
+    ----------------------------------------
+    Total                     11.276ns (4.809ns logic, 6.467ns route)
+                                       (42.6% logic, 57.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U1/q_1'
+  Total number of paths / destination ports: 1364 / 10
+-------------------------------------------------------------------------
+Offset:              9.661ns (Levels of Logic = 9)
+  Source:            U3/vc_2 (FF)
+  Destination:       blue<1> (PAD)
+  Source Clock:      U1/q_1 rising
+
+  Data Path: U3/vc_2 to blue<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            15   0.447   1.326  U3/vc_2 (U3/vc_2)
+     LUT5:I0->O            1   0.203   0.000  U3/Mcompar_BUS_0011_GND_5_o_LessThan_36_o_lut<1>1 (U3/Mcompar_BUS_0011_GND_5_o_LessThan_36_o_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  U3/Mcompar_BUS_0011_GND_5_o_LessThan_36_o_cy<1> (U3/Mcompar_BUS_0011_GND_5_o_LessThan_36_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcompar_BUS_0011_GND_5_o_LessThan_36_o_cy<2> (U3/Mcompar_BUS_0011_GND_5_o_LessThan_36_o_cy<2>)
+     MUXCY:CI->O           1   0.213   0.684  U3/Mcompar_BUS_0011_GND_5_o_LessThan_36_o_cy<3> (U3/Mcompar_BUS_0011_GND_5_o_LessThan_36_o_cy<3>)
+     LUT6:I4->O            1   0.203   0.827  U3/Mcompar_BUS_0011_GND_5_o_LessThan_36_o_cy<4> (U3/BUS_0011_GND_5_o_LessThan_36_o)
+     LUT6:I2->O            2   0.203   0.845  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o1 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o1)
+     LUT3:I0->O            1   0.205   0.924  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o3 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o)
+     LUT5:I0->O            2   0.203   0.616  U3/blue<1> (blue_0_OBUF)
+     OBUF:I->O                 2.571          blue_1_OBUF (blue<1>)
+    ----------------------------------------
+    Total                      9.661ns (4.439ns logic, 5.222ns route)
+                                       (45.9% logic, 54.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clr'
+  Total number of paths / destination ports: 145 / 5
+-------------------------------------------------------------------------
+Offset:              10.795ns (Levels of Logic = 9)
+  Source:            pipe1_gap_pos_y_5_LD (LATCH)
+  Destination:       blue<1> (PAD)
+  Source Clock:      clr falling
+
+  Data Path: pipe1_gap_pos_y_5_LD to blue<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q              12   0.498   1.137  pipe1_gap_pos_y_5_LD (pipe1_gap_pos_y_5_LD)
+     LUT3:I0->O           15   0.205   1.086  pipe1_gap_pos_y_51 (pipe1_gap_pos_y_5)
+     LUT4:I2->O            1   0.203   0.000  U3/Mcompar_BUS_0011_GND_5_o_LessThan_36_o_lut<2> (U3/Mcompar_BUS_0011_GND_5_o_LessThan_36_o_lut<2>)
+     MUXCY:S->O            1   0.172   0.000  U3/Mcompar_BUS_0011_GND_5_o_LessThan_36_o_cy<2> (U3/Mcompar_BUS_0011_GND_5_o_LessThan_36_o_cy<2>)
+     MUXCY:CI->O           1   0.213   0.684  U3/Mcompar_BUS_0011_GND_5_o_LessThan_36_o_cy<3> (U3/Mcompar_BUS_0011_GND_5_o_LessThan_36_o_cy<3>)
+     LUT6:I4->O            1   0.203   0.827  U3/Mcompar_BUS_0011_GND_5_o_LessThan_36_o_cy<4> (U3/BUS_0011_GND_5_o_LessThan_36_o)
+     LUT6:I2->O            2   0.203   0.845  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o1 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o1)
+     LUT3:I0->O            1   0.205   0.924  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o3 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o)
+     LUT5:I0->O            2   0.203   0.616  U3/blue<1> (blue_0_OBUF)
+     OBUF:I->O                 2.571          blue_1_OBUF (blue<1>)
+    ----------------------------------------
+    Total                     10.795ns (4.676ns logic, 6.119ns route)
+                                       (43.3% logic, 56.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clr_pipe1_pos_x[9]_AND_56_o'
+  Total number of paths / destination ports: 240 / 5
+-------------------------------------------------------------------------
+Offset:              10.370ns (Levels of Logic = 11)
+  Source:            pipe2_pos_x_0_LDC (LATCH)
+  Destination:       blue<1> (PAD)
+  Source Clock:      clr_pipe1_pos_x[9]_AND_56_o falling
+
+  Data Path: pipe2_pos_x_0_LDC to blue<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              5   0.498   0.943  pipe2_pos_x_0_LDC (pipe2_pos_x_0_LDC)
+     LUT3:I0->O            8   0.205   1.050  pipe2_pos_x_01 (pipe2_pos_x_0)
+     LUT4:I0->O            1   0.203   0.000  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_lut<0> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<0> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<1> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<2> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<2>)
+     MUXCY:CI->O           1   0.213   0.580  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<3> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<3>)
+     LUT6:I5->O            1   0.205   0.924  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<4> (U3/BUS_0018_GND_5_o_LessThan_51_o)
+     LUT5:I0->O            2   0.203   0.617  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o2 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o2)
+     LUT3:I2->O            1   0.205   0.924  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o3 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o)
+     LUT5:I0->O            2   0.203   0.616  U3/blue<1> (blue_0_OBUF)
+     OBUF:I->O                 2.571          blue_1_OBUF (blue<1>)
+    ----------------------------------------
+    Total                     10.370ns (4.716ns logic, 5.654ns route)
+                                       (45.5% logic, 54.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clr_pipe1_pos_x[9]_AND_55_o'
+  Total number of paths / destination ports: 220 / 5
+-------------------------------------------------------------------------
+Offset:              10.195ns (Levels of Logic = 11)
+  Source:            pipe2_pos_x_1_LDC1 (LATCH)
+  Destination:       blue<1> (PAD)
+  Source Clock:      clr_pipe1_pos_x[9]_AND_55_o falling
+
+  Data Path: pipe2_pos_x_1_LDC1 to blue<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDP:G->Q              4   0.498   0.912  pipe2_pos_x_1_LDC1 (pipe2_pos_x_1_LDC1)
+     LUT3:I0->O            8   0.205   0.907  pipe2_pos_x_11 (pipe2_pos_x_1)
+     LUT4:I2->O            1   0.203   0.000  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_lut<0> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<0> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<1> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<2> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<2>)
+     MUXCY:CI->O           1   0.213   0.580  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<3> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<3>)
+     LUT6:I5->O            1   0.205   0.924  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<4> (U3/BUS_0018_GND_5_o_LessThan_51_o)
+     LUT5:I0->O            2   0.203   0.617  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o2 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o2)
+     LUT3:I2->O            1   0.205   0.924  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o3 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o)
+     LUT5:I0->O            2   0.203   0.616  U3/blue<1> (blue_0_OBUF)
+     OBUF:I->O                 2.571          blue_1_OBUF (blue<1>)
+    ----------------------------------------
+    Total                     10.195ns (4.716ns logic, 5.479ns route)
+                                       (46.3% logic, 53.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clr_pipe1_pos_x[9]_AND_52_o'
+  Total number of paths / destination ports: 200 / 5
+-------------------------------------------------------------------------
+Offset:              10.290ns (Levels of Logic = 10)
+  Source:            pipe2_pos_x_2_LDC (LATCH)
+  Destination:       blue<1> (PAD)
+  Source Clock:      clr_pipe1_pos_x[9]_AND_52_o falling
+
+  Data Path: pipe2_pos_x_2_LDC to blue<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.498   0.912  pipe2_pos_x_2_LDC (pipe2_pos_x_2_LDC)
+     LUT3:I0->O            7   0.205   1.021  pipe2_pos_x_21 (pipe2_pos_x_2)
+     LUT4:I0->O            1   0.203   0.000  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_lut<1> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<1> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<2> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<2>)
+     MUXCY:CI->O           1   0.213   0.580  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<3> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<3>)
+     LUT6:I5->O            1   0.205   0.924  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<4> (U3/BUS_0018_GND_5_o_LessThan_51_o)
+     LUT5:I0->O            2   0.203   0.617  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o2 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o2)
+     LUT3:I2->O            1   0.205   0.924  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o3 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o)
+     LUT5:I0->O            2   0.203   0.616  U3/blue<1> (blue_0_OBUF)
+     OBUF:I->O                 2.571          blue_1_OBUF (blue<1>)
+    ----------------------------------------
+    Total                     10.290ns (4.697ns logic, 5.593ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clr_pipe1_pos_x[9]_AND_51_o'
+  Total number of paths / destination ports: 180 / 5
+-------------------------------------------------------------------------
+Offset:              10.171ns (Levels of Logic = 10)
+  Source:            pipe2_pos_x_3_LDC1 (LATCH)
+  Destination:       blue<1> (PAD)
+  Source Clock:      clr_pipe1_pos_x[9]_AND_51_o falling
+
+  Data Path: pipe2_pos_x_3_LDC1 to blue<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDP:G->Q              3   0.498   0.879  pipe2_pos_x_3_LDC1 (pipe2_pos_x_3_LDC1)
+     LUT3:I0->O            9   0.205   0.934  pipe2_pos_x_31 (pipe2_pos_x_3)
+     LUT4:I2->O            1   0.203   0.000  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_lut<1> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<1> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<2> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<2>)
+     MUXCY:CI->O           1   0.213   0.580  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<3> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<3>)
+     LUT6:I5->O            1   0.205   0.924  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<4> (U3/BUS_0018_GND_5_o_LessThan_51_o)
+     LUT5:I0->O            2   0.203   0.617  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o2 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o2)
+     LUT3:I2->O            1   0.205   0.924  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o3 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o)
+     LUT5:I0->O            2   0.203   0.616  U3/blue<1> (blue_0_OBUF)
+     OBUF:I->O                 2.571          blue_1_OBUF (blue<1>)
+    ----------------------------------------
+    Total                     10.171ns (4.697ns logic, 5.474ns route)
+                                       (46.2% logic, 53.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clr_pipe1_pos_x[9]_AND_48_o'
+  Total number of paths / destination ports: 405 / 5
+-------------------------------------------------------------------------
+Offset:              11.453ns (Levels of Logic = 9)
+  Source:            pipe2_pos_x_4_LDC (LATCH)
+  Destination:       blue<1> (PAD)
+  Source Clock:      clr_pipe1_pos_x[9]_AND_48_o falling
+
+  Data Path: pipe2_pos_x_4_LDC to blue<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.498   0.912  pipe2_pos_x_4_LDC (pipe2_pos_x_4_LDC)
+     LUT3:I0->O           18   0.205   1.154  pipe2_pos_x_41 (pipe2_pos_x_4)
+     LUT5:I3->O            2   0.203   0.864  U3/Madd_n0153_xor<6>11 (U3/n0153<6>)
+     LUT4:I0->O            1   0.203   0.000  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_lut<3> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_lut<3>)
+     MUXCY:S->O            1   0.366   0.580  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<3> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<3>)
+     LUT6:I5->O            1   0.205   0.924  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<4> (U3/BUS_0018_GND_5_o_LessThan_51_o)
+     LUT5:I0->O            2   0.203   0.617  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o2 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o2)
+     LUT3:I2->O            1   0.205   0.924  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o3 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o)
+     LUT5:I0->O            2   0.203   0.616  U3/blue<1> (blue_0_OBUF)
+     OBUF:I->O                 2.571          blue_1_OBUF (blue<1>)
+    ----------------------------------------
+    Total                     11.453ns (4.862ns logic, 6.591ns route)
+                                       (42.5% logic, 57.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clr_pipe1_pos_x[9]_AND_46_o'
+  Total number of paths / destination ports: 315 / 5
+-------------------------------------------------------------------------
+Offset:              11.429ns (Levels of Logic = 9)
+  Source:            pipe2_pos_x_5_LDC (LATCH)
+  Destination:       blue<1> (PAD)
+  Source Clock:      clr_pipe1_pos_x[9]_AND_46_o falling
+
+  Data Path: pipe2_pos_x_5_LDC to blue<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              6   0.498   0.973  pipe2_pos_x_5_LDC (pipe2_pos_x_5_LDC)
+     LUT3:I0->O           15   0.205   1.210  pipe2_pos_x_51 (pipe2_pos_x_5)
+     LUT6:I3->O            2   0.205   0.721  U3/Madd_n0153_xor<7>11 (U3/n0153<7>)
+     LUT4:I2->O            1   0.203   0.000  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_lut<3> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_lut<3>)
+     MUXCY:S->O            1   0.366   0.580  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<3> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<3>)
+     LUT6:I5->O            1   0.205   0.924  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<4> (U3/BUS_0018_GND_5_o_LessThan_51_o)
+     LUT5:I0->O            2   0.203   0.617  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o2 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o2)
+     LUT3:I2->O            1   0.205   0.924  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o3 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o)
+     LUT5:I0->O            2   0.203   0.616  U3/blue<1> (blue_0_OBUF)
+     OBUF:I->O                 2.571          blue_1_OBUF (blue<1>)
+    ----------------------------------------
+    Total                     11.429ns (4.864ns logic, 6.565ns route)
+                                       (42.6% logic, 57.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clr_pipe1_pos_x[9]_AND_44_o'
+  Total number of paths / destination ports: 235 / 5
+-------------------------------------------------------------------------
+Offset:              11.209ns (Levels of Logic = 9)
+  Source:            pipe2_pos_x_6_LDC (LATCH)
+  Destination:       blue<1> (PAD)
+  Source Clock:      clr_pipe1_pos_x[9]_AND_44_o falling
+
+  Data Path: pipe2_pos_x_6_LDC to blue<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              3   0.498   0.879  pipe2_pos_x_6_LDC (pipe2_pos_x_6_LDC)
+     LUT3:I0->O           15   0.205   1.086  pipe2_pos_x_61 (pipe2_pos_x_6)
+     LUT6:I4->O            2   0.203   0.721  U3/Madd_n0153_xor<7>11 (U3/n0153<7>)
+     LUT4:I2->O            1   0.203   0.000  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_lut<3> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_lut<3>)
+     MUXCY:S->O            1   0.366   0.580  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<3> (U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<3>)
+     LUT6:I5->O            1   0.205   0.924  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<4> (U3/BUS_0018_GND_5_o_LessThan_51_o)
+     LUT5:I0->O            2   0.203   0.617  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o2 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o2)
+     LUT3:I2->O            1   0.205   0.924  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o3 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o)
+     LUT5:I0->O            2   0.203   0.616  U3/blue<1> (blue_0_OBUF)
+     OBUF:I->O                 2.571          blue_1_OBUF (blue<1>)
+    ----------------------------------------
+    Total                     11.209ns (4.862ns logic, 6.347ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clr_pipe1_pos_x[9]_AND_43_o'
+  Total number of paths / destination ports: 165 / 5
+-------------------------------------------------------------------------
+Offset:              10.234ns (Levels of Logic = 7)
+  Source:            pipe2_pos_x_7_LDC1 (LATCH)
+  Destination:       blue<1> (PAD)
+  Source Clock:      clr_pipe1_pos_x[9]_AND_43_o falling
+
+  Data Path: pipe2_pos_x_7_LDC1 to blue<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDP:G->Q              3   0.498   0.879  pipe2_pos_x_7_LDC1 (pipe2_pos_x_7_LDC1)
+     LUT3:I0->O           12   0.205   1.156  pipe2_pos_x_71 (pipe2_pos_x_7)
+     LUT5:I1->O            1   0.203   0.827  U3/Madd_n0153_xor<8>11 (U3/n0153<8>)
+     LUT6:I2->O            1   0.203   0.924  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<4> (U3/BUS_0018_GND_5_o_LessThan_51_o)
+     LUT5:I0->O            2   0.203   0.617  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o2 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o2)
+     LUT3:I2->O            1   0.205   0.924  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o3 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o)
+     LUT5:I0->O            2   0.203   0.616  U3/blue<1> (blue_0_OBUF)
+     OBUF:I->O                 2.571          blue_1_OBUF (blue<1>)
+    ----------------------------------------
+    Total                     10.234ns (4.291ns logic, 5.943ns route)
+                                       (41.9% logic, 58.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clr_pipe1_pos_x[9]_AND_40_o'
+  Total number of paths / destination ports: 105 / 5
+-------------------------------------------------------------------------
+Offset:              11.073ns (Levels of Logic = 7)
+  Source:            pipe2_pos_x_8_LDC (LATCH)
+  Destination:       blue<1> (PAD)
+  Source Clock:      clr_pipe1_pos_x[9]_AND_40_o falling
+
+  Data Path: pipe2_pos_x_8_LDC to blue<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              9   0.498   1.058  pipe2_pos_x_8_LDC (pipe2_pos_x_8_LDC)
+     LUT3:I0->O           35   0.205   1.699  pipe2_pos_x_81 (pipe2_pos_x_8)
+     LUT6:I0->O            1   0.203   0.944  U3/Madd_n0153_cy<9>11 (U3/Madd_n0153_cy<9>)
+     LUT6:I0->O            1   0.203   0.924  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<4> (U3/BUS_0018_GND_5_o_LessThan_51_o)
+     LUT5:I0->O            2   0.203   0.617  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o2 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o2)
+     LUT3:I2->O            1   0.205   0.924  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o3 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o)
+     LUT5:I0->O            2   0.203   0.616  U3/blue<1> (blue_0_OBUF)
+     OBUF:I->O                 2.571          blue_1_OBUF (blue<1>)
+    ----------------------------------------
+    Total                     11.073ns (4.291ns logic, 6.782ns route)
+                                       (38.8% logic, 61.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clr_pipe1_pos_x[9]_AND_39_o'
+  Total number of paths / destination ports: 60 / 5
+-------------------------------------------------------------------------
+Offset:              10.298ns (Levels of Logic = 7)
+  Source:            pipe2_pos_x_9_LDC1 (LATCH)
+  Destination:       blue<1> (PAD)
+  Source Clock:      clr_pipe1_pos_x[9]_AND_39_o falling
+
+  Data Path: pipe2_pos_x_9_LDC1 to blue<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDP:G->Q              1   0.498   0.808  pipe2_pos_x_9_LDC1 (pipe2_pos_x_9_LDC1)
+     LUT3:I0->O            9   0.205   1.174  pipe2_pos_x_91 (pipe2_pos_x_9)
+     LUT6:I1->O            1   0.203   0.944  U3/Madd_n0153_cy<9>11 (U3/Madd_n0153_cy<9>)
+     LUT6:I0->O            1   0.203   0.924  U3/Mcompar_BUS_0018_GND_5_o_LessThan_51_o_cy<4> (U3/BUS_0018_GND_5_o_LessThan_51_o)
+     LUT5:I0->O            2   0.203   0.617  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o2 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o2)
+     LUT3:I2->O            1   0.205   0.924  U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o3 (U3/is_pipe1_horizontal_in_range_is_pipe2_horizontal_in_range_OR_34_o)
+     LUT5:I0->O            2   0.203   0.616  U3/blue<1> (blue_0_OBUF)
+     OBUF:I->O                 2.571          blue_1_OBUF (blue<1>)
+    ----------------------------------------
+    Total                     10.298ns (4.291ns logic, 6.007ns route)
+                                       (41.7% logic, 58.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock U1/q_1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U1/q_1         |    4.780|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U1/q_17
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U1/q_17        |    1.984|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------------------+---------+---------+---------+---------+
+                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------+---------+---------+---------+---------+
+clk                        |    6.491|         |         |         |
+clr                        |         |    6.436|         |         |
+clr_pipe1_pos_x[9]_AND_39_o|         |    6.299|         |         |
+clr_pipe1_pos_x[9]_AND_40_o|         |    6.239|         |         |
+clr_pipe1_pos_x[9]_AND_43_o|         |    6.335|         |         |
+clr_pipe1_pos_x[9]_AND_44_o|         |    6.290|         |         |
+clr_pipe1_pos_x[9]_AND_46_o|         |    6.274|         |         |
+clr_pipe1_pos_x[9]_AND_48_o|         |    6.214|         |         |
+clr_pipe1_pos_x[9]_AND_51_o|         |    6.385|         |         |
+clr_pipe1_pos_x[9]_AND_52_o|         |    6.463|         |         |
+clr_pipe1_pos_x[9]_AND_55_o|         |    6.618|         |         |
+clr_pipe1_pos_x[9]_AND_56_o|         |    6.668|         |         |
+---------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clr_pipe1_pos_x[9]_AND_39_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    4.314|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clr_pipe1_pos_x[9]_AND_40_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    4.188|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clr_pipe1_pos_x[9]_AND_43_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    4.188|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clr_pipe1_pos_x[9]_AND_44_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.136|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clr_pipe1_pos_x[9]_AND_46_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.136|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clr_pipe1_pos_x[9]_AND_48_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.119|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clr_pipe1_pos_x[9]_AND_51_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.914|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clr_pipe1_pos_x[9]_AND_52_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.812|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clr_pipe1_pos_x[9]_AND_55_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.656|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clr_pipe1_pos_x[9]_AND_56_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.703|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 10.70 secs
+ 
+--> 
+
+
+Total memory usage is 484064 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   78 (   0 filtered)
+Number of infos    :   29 (   0 filtered)
+

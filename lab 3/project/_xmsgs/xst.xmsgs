@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 125: Result of <arg fmt="%d" index="1">28</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">27</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 134: Result of <arg fmt="%d" index="1">27</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">26</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 143: Result of <arg fmt="%d" index="1">26</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">25</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 152: Result of <arg fmt="%d" index="1">21</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">20</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 184: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 192: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 196: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 206: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 215: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 219: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 236: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 239: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 242: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 245: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="295" delta="new" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 307: case condition never applies
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="295" delta="new" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 308: case condition never applies
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="295" delta="new" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 340: case condition never applies
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="295" delta="new" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 341: case condition never applies
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 346: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="295" delta="new" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 382: case condition never applies
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="295" delta="new" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 383: case condition never applies
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 389: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="295" delta="new" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 420: case condition never applies
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="295" delta="new" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 421: case condition never applies
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 425: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="295" delta="new" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 460: case condition never applies
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="295" delta="new" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 461: case condition never applies
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 466: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="295" delta="new" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 498: case condition never applies
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="295" delta="new" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 499: case condition never applies
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 505: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1401" delta="new" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 277: Signal <arg fmt="%s" index="1">seg_reg[7]</arg> in unit <arg fmt="%s" index="2">nexys3</arg> is connected to following multiple drivers:
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1401" delta="new" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 270: Signal <arg fmt="%s" index="1">seg_counter[1]</arg> in unit <arg fmt="%s" index="2">nexys3</arg> is connected to following multiple drivers:
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"/home/ise/CS_152A/lab 3/src/nexys3.v" Line 1: Empty module &lt;<arg fmt="%s" index="1">nexys3</arg>&gt; remains a black box.
+</msg>
+
+</messages>
+

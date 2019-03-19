@@ -1,0 +1,41 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/ise/CS_152A/lab 2/project/tb_isim_beh.exe -prj /home/ise/CS_152A/lab 2/project/tb_beh.prj work.tb work.glbl 
+ISim P.20160913 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/ise/CS_152A/lab 2/project/../src/rtl/seq_mult.v" into library work
+Analyzing Verilog file "/home/ise/CS_152A/lab 2/project/../src/rtl/seq_add.v" into library work
+Analyzing Verilog file "/home/ise/CS_152A/lab 2/project/../src/rtl/uart_fifo.v" into library work
+Analyzing Verilog file "/home/ise/CS_152A/lab 2/project/../src/rtl/uart.v" into library work
+Analyzing Verilog file "/home/ise/CS_152A/lab 2/project/../src/rtl/seq_rf.v" into library work
+Analyzing Verilog file "/home/ise/CS_152A/lab 2/project/../src/rtl/seq_alu.v" into library work
+Analyzing Verilog file "/home/ise/CS_152A/lab 2/project/../src/rtl/uart_top.v" into library work
+WARNING:HDLCompiler:327 - "/home/ise/CS_152A/lab 2/project/../src/rtl/uart_top.v" Line 106: Concatenation with unsized literal; will interpret as 32 bits
+Analyzing Verilog file "/home/ise/CS_152A/lab 2/project/../src/rtl/seq.v" into library work
+Analyzing Verilog file "/home/ise/CS_152A/lab 2/project/../src/tb/model_uart.v" into library work
+Analyzing Verilog file "/home/ise/CS_152A/lab 2/project/../src/rtl/nexys3.v" into library work
+Analyzing Verilog file "/home/ise/CS_152A/lab 2/project/../src/tb/tb.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:327 - "/home/ise/CS_152A/lab 2/project/../src/rtl/uart_top.v" Line 106: Concatenation with unsized literal; will interpret as 32 bits
+Completed static elaboration
+Fuse Memory Usage: 95460 KB
+Fuse CPU Usage: 1620 ms
+Compiling module model_uart(baud=1000000,name="UA...
+Compiling module seq_rf_default
+Compiling module seq_add_default
+Compiling module seq_mult_default
+Compiling module seq_alu_default
+Compiling module seq_default
+Compiling module uart_fifo
+Compiling module uart
+Compiling module uart_top_default
+Compiling module nexys3_default
+Compiling module tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 12 Verilog Units
+Built simulation executable /home/ise/CS_152A/lab 2/project/tb_isim_beh.exe
+Fuse Memory Usage: 98660 KB
+Fuse CPU Usage: 1800 ms
+GCC CPU Usage: 1230 ms
